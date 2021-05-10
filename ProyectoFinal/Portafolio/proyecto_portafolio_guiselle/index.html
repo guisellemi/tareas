@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Guiselle Calero - Portfolio</title>
+<link rel="stylesheet" href="./index.css" />
+<script src="./index.js" type="text/javascript" defer></script>
+<link rel="shortcut icon" href="./g-icon.png">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+</head>
+<body>
+<header class="header"> <a href="index.html" title="Inicio"> <img alt="Guiselle" src="./g-icon.png"/></a>
+  <div class="header--contenedor">
+    <nav class="header--nav">
+      <div id="header-nav-menu"> 
+        <a href="#acerca" title="Acerca de mí">Acerca de mí</a> 
+        <a href="#habilidades" title="Habilidades">Habilidades</a> 
+        <a href="#experiencia" title="Experiencia">Experiencia</a> 
+        <a href="#proyecto" title="Proyectos">Proyectos</a> 
+        <a href="#contacto" title="Contacto">Contacto</a> </div>
+      <i
+        id="boton-menu"
+        onclick="menuResponsive()"
+        class="fas fa-bars"
+      ></i> </nav>
+  </div>
+</header>
+<main>
+  <div class="hero-banner">
+    <div>
+      <h1>GUISELLE CALERO</h1>
+      <h2>Desarrolladora Front-End</h2>
+      <button onclick="curriculum()" id="submit1" type="submit" class="curriculum">CV</button>
+    </div>
+    <img src="./guiselle.png" alt="Guiselle Calero" /> </div>
+  <a id="acerca" name="acerca"></a>
+  <div class="section">
+    <h3>Acerca de mi</h3>
+    <p>Soy desarrolladora de HTML correos y  estudiante de Front-End . Soy de Curridabat, Costa Rica. Me gusta investigar las mejores soluciones 
+      los comportamientos de los usuarios en cada proyecto que trabajo, teniendo 
+      siempre como prioridad la experiencia de usuario. <br/>
+      <br/>
+      Mi objetivo es crear sitios web accesibles, utilizables y funcionales, 
+      donde los usuarios vivan una experiencia fluida, positiva y cómoda.</p>
+  </div>
+  <a id="habilidades" name="habilidades"></a>
+  <div class="habilidades">
+    <h3>Habilidades</h3>
+    <div class="flex-grid">
+      <div class="flex-item">
+        <p>CÓDIGO</p>
+        <ul>
+          <li>HTML</li>
+          <li>HTML Correos</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>Conocimiento básico de Javascript</li>
+        </ul>
+      </div>
+      <div class="flex-item">
+        <p>TOOLS</p>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Dreamweaver</li>
+          <li>Sketch</li>
+          <li>Visual Studio Code</li>
+        </ul>
+      </div>
+      <div class="flex-item">
+        <p>BLANDAS</p>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Capacidad de trabajar bajo presión</li>
+          <li>Proactiva</li>
+          <li>Resolución de problemas</li>
+          <li>¡Dispuesta a aprender!</li>
+        </ul>
+      </div>
+      <div class="flex-item">
+        <p>IDIOMAS</p>
+        <ul>
+          <li>Español (Nativo)</li>
+          <li>Inglés (Muy buen dominio)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <a id="experiencia" name="experiencia"></a>
+  <div class="experiencia">
+    <h3>Experiencia</h3>
+    <div class="flex-grid">
+      <div class="flex-item">
+        <h4>Junior Software Engineer</h4>
+        <p>Oct 2009 – Jan 2011</p>
+        <p>Landing pages editions GMC brand, HTML, CSS, Javascript, Jira issues</p>
+      </div>
+      <div class="flex-item">
+        <h4>Junior Email Engineer</h4>
+        <p>Feb 2011 – Oct 2013</p>
+        <p>Build HTML email messages, unitesting, optimize and find solutions to improve deliveries.</p>
+      </div>
+      <div class="flex-item">
+        <h4>Creative Engineer</h4>
+        <p>Oct 2013 – Jan 2014</p>
+        <p>Build HTML email messages, unitesting, optimize and find solutions to improve deliveries.</p>
+      </div>
+      <div class="flex-item">
+        <h4>Senior Creative Engineer</h4>
+        <p>Jan 2014 – Present</p>
+        <p>Build HTML email messages, perform unit analysis, optimize and find solutions to improve deliveries. 
+          Using Movable Ink, dynamic content, responsive and fluid-layouts. Rendering perfectly on all browsers and email clients. <br/>
+          <br/>
+          Responsible for jira reports, and participating in kickoff calls to discuss projects.</p>
+      </div>
+    </div>
+  </div>
+  <a id="proyecto" name="proyecto"></a>
+  <div class="section bgcolor">
+    <h3>Proyectos</h3>
+    <p><strong>Veeva Email Certification for Prodigious Costa Rica. </strong><br/>
+      <br/>
+      Participate in Veeva Email Certification for Prodigious Costa Rica.</p>
+  </div>
+  <a id="contacto" name="contacto"></a>
+  <div class="contact">
+    <h4>Contacto</h4>
+    <p>Siéntase libre de enviarme un correo electrónico a la dirección: <a href="mailto:guisellemi@gmail.com&subject=Pedir%20Referencias&body=Este%20es%20un%20mensaje%20para%20comunicarme"" >guisellemi@gmail.com</a> 
+      <br/>  <br/>Déjame tus datos para comunicarme contigo:
+    </p>
+   
+    <form action="mailto:guisellemi@gmail.com" method="post" id="form1">
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombre" placeholder="Guiselle" />
+      <br />
+      <br />
+      <label for="correo">Correo electrónico: </label>
+      <input required id="correo" type="email" placeholder="test@test.com"
+                    />
+      <br />
+      <br />
+      <label for="telefono">Teléfono: </label>
+      <input id="telefono" type="tel" placeholder="8888-8888" />
+      <br />
+      <br />
+      <label for="comentarios" class="tex-area">Comentarios: </label>
+      <textarea id="comentarios"></textarea>
+      <p id="valores"></p>
+      <button onclick="sacarValores()" id="submit" type="submit">Enviar</button>
+    </form>
+  </div>
+</main>
+<footer>
+  <h5>Guiselle Calero</h5>
+  <p >&copy; 2021 - Portafolio Personal <br/>También puede seguirme en 
+    <a href="http://www.facebook.com" title="facebook" target="_blank">facebook</a> 
+    <a href="http://www.instagram.com" target="_blank" title="Instagram">Instagram</a>
+  
+    </p>
+</body>
+</html>
